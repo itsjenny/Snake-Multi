@@ -1,0 +1,17 @@
+
+public class Smol extends Food 
+{
+  int size;
+  
+  public Smol()
+  {
+   size = 1; 
+  }
+  
+  
+   public int addToSnake()
+  {
+   return size; 
+  }
+  
+}

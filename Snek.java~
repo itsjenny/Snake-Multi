@@ -1,0 +1,40 @@
+import java.awt.BorderLayout;
+import java.awt.Point;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.util.LinkedList;
+import java.util.Random;
+import javax.swing.JFrame;
+
+public class Snek extends JFrame 
+{
+  
+ //# of miliseconds between frames
+ private static final long FRAME_TIME = 1000L / 50L; 
+ 
+ private static final int MIN_SNAKE_LENGTH = 3;
+ 
+ private static final int MAX_DIRECTIONS = 3;
+ 
+ //Used for spawning foods
+ private Random random;
+ 
+ //Clock for handling game time and logic
+ private Clock logicTimer;
+ 
+ //Checking if the game has started or has been lost
+ private boolean isNewGame;
+ private boolean isGameOver;
+ 
+ private LinkedList<Point> snake;
+ 
+ //Score (length of snake)
+ private int length;
+ 
+ //Creates the new game
+ private SnakeGame() 
+ {
+   super("Snake Remake");
+   setLayout(new BorderLayout());
+   setDefaultCloseOperation(EXIT_ON_CLOSE);
+   setResizable(false);

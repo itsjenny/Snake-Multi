@@ -1,0 +1,24 @@
+import junit.framework.TestCase;
+
+/**
+ * A JUnit test case class.
+ * Every method starting with the word "test" will be called when running
+ * the test with JUnit.
+ */
+public class SnekTest extends TestCase 
+{ 
+  @Test
+  public void test1() 
+  {
+    Snek snake = new Snake (KeyEvent.VK_LEFT, KeyEvent.VK_RIGHT, KeyEvent.VK_UP, KeyEvent.VK_DOWN);
+    int length = snake.getLength();
+    assertEquals(length, 2);
+    Food food = new Big();
+    snake.grow(food);
+    assertEquals(length, 5)
+      
+    
+    
+  }
+  
+}

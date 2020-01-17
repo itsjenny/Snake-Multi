@@ -1,0 +1,18 @@
+public class Big extends Food 
+{
+  private int size;
+  private String colour;
+  
+  public void Big()
+  {
+   size = 3; 
+  }
+  
+  public int addToSnake()
+  {
+   return size; 
+  }
+  
+  
+}
+

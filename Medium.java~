@@ -1,0 +1,19 @@
+
+public class Medium extends Food 
+{
+  
+  int size;
+  String colour;
+  
+  public Smol()
+  {
+   size = 2; 
+   colour = "BLUE";
+  }
+  
+  public int addToSnake()
+  {
+   return size; 
+  }
+  
+}
